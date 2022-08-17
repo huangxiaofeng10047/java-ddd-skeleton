@@ -6,6 +6,8 @@ import tv.codely.mooc.courses_counter.domain.CoursesCounterRepository;
 import tv.codely.shared.domain.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.UUID;
+
 
 @Service
 public final class CoursesCounterFinder {
@@ -18,9 +20,11 @@ public final class CoursesCounterFinder {
 
     public CoursesCounterResponse find() {
         CoursesCounter coursesCounter = repository.search().orElseGet(() -> {
-            throw new CoursesCounterNotInitialized();
+//            throw new CoursesCounterNotInitialized();
+          return    CoursesCounter.initialize(UUID.randomUUID().toString());
         });
 
         return new CoursesCounterResponse(coursesCounter.total().value());
+
     }
 }
