@@ -83,15 +83,15 @@
         const filterRowTemplate = "<div class=\"filter-row\">\n" +
                                   "    <div class=\"inline-block relative w-64 mr-3\">\n" +
                                   "        <label class=\"block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2\" for=\"field\">\n" +
-                                  "            Campo\n" +
+                                  "            field\n" +
                                   "        </label>\n" +
                                   "        <select name=\"filters[" +
                                   totalRows +
                                   "][field]\" id=\"field\"\n" +
                                   "                class=\"block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline\">\n" +
-                                  "            <option value=\"id\">identifer</option>\n" +
-                                  "            <option value=\"name\">Nombre</option>\n" +
-                                  "            <option value=\"duration\">Duración</option>\n" +
+                                  "            <option value=\"id\">id</option>\n" +
+                                  "            <option value=\"name\">name</option>\n" +
+                                  "            <option value=\"duration\">durations</option>\n" +
                                   "        </select>\n" +
                                   "        <div class=\"pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700\">\n" +
                                   "            <svg class=\"fill-current h-4 w-4\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\">\n" +
@@ -101,16 +101,16 @@
                                   "    </div>\n" +
                                   "    <div class=\"inline-block relative w-64 mr-3\">\n" +
                                   "        <label class=\"block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2\" for=\"operator\">\n" +
-                                  "            Operador\n" +
+                                  "            Operator\n" +
                                   "        </label>\n" +
                                   "        <select id=\"operator\" name=\"filters[" +
                                   totalRows +
                                   "][operator]\"\n" +
                                   "                class=\"block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline\">\n" +
-                                  "            <option value=\"=\">es exactamente igual</option>\n" +
-                                  "            <option value=\"CONTAINS\">contiene</option>\n" +
-                                  "            <option value=\">\">es más grande que</option>\n" +
-                                  "            <option value=\"<\">es más pequeño que</option>\n" +
+                                  "            <option value=\"=\">equals </option>\n" +
+                                  "            <option value=\"CONTAINS\">contains</option>\n" +
+                                  "            <option value=\">\">greater</option>\n" +
+                                  "            <option value=\"<\">less</option>\n" +
                                   "        </select>\n" +
                                   "        <div class=\"pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700\">\n" +
                                   "            <svg class=\"fill-current h-4 w-4\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\">\n" +
@@ -120,7 +120,7 @@
                                   "    </div>\n" +
                                   "    <div class=\"inline-block relative w-64 mr-3\">\n" +
                                   "        <label class=\"block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2\" for=\"value\">\n" +
-                                  "            Valor\n" +
+                                  "            Value\n" +
                                   "        </label>\n" +
                                   "        <input class=\"appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500\"\n" +
                                   "               id=\"value\" type=\"text\" name=\"filters[" +
