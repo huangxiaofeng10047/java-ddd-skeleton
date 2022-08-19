@@ -34,6 +34,6 @@ public final class ElasticsearchBackofficeCourseRepository extends Elasticsearch
 
     @Override
     protected String moduleName() {
-        return "courses";
+        return "_doc";
     }
 }

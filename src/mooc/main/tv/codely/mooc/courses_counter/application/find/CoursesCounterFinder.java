@@ -20,8 +20,8 @@ public final class CoursesCounterFinder {
 
     public CoursesCounterResponse find() {
         CoursesCounter coursesCounter = repository.search().orElseGet(() -> {
-//            throw new CoursesCounterNotInitialized();
-          return    CoursesCounter.initialize(UUID.randomUUID().toString());
+            throw new CoursesCounterNotInitialized();
+//          return    CoursesCounter.initialize(UUID.randomUUID().toString());
         });
 
         return new CoursesCounterResponse(coursesCounter.total().value());

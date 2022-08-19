@@ -17,7 +17,7 @@ allprojects {
   }
 
   ext {
-    set('elasticsearch.version', '6.8.4')
+    set('elasticsearch.version', '7.17.5')
   }
 
   dependencies {
@@ -36,8 +36,8 @@ allprojects {
     implementation 'org.freemarker:freemarker-gae:2.3.29'
     implementation 'org.reflections:reflections:0.9.11'
     implementation 'org.springframework.boot:spring-boot-starter-amqp'
-    implementation 'org.elasticsearch.client:elasticsearch-rest-client:6.8.5'
-    implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:6.8.4'
+    implementation 'org.elasticsearch.client:elasticsearch-rest-client:7.17.5'
+    implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.17.5'
     runtimeOnly 'mysql:mysql-connector-java:8.0.18'
 // https://mvnrepository.com/artifact/junit/junit
 testImplementation group: 'junit', name: 'junit', version: '4.13.2'
@@ -48,7 +48,7 @@ testImplementation group: 'junit', name: 'junit', version: '4.13.2'
     // testImplementation 'com.github.javafaker:javafaker:1.0.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
     // https://mvnrepository.com/artifact/com.github.javafaker/javafaker
-    implementation ('com.github.javafaker:javafaker:1.0.2') 
+    implementation ('com.github.javafaker:javafaker:1.0.2')
     // implementation group: 'org.yaml', name: 'snakeyaml', version: '1.30'
   }
 

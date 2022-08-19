@@ -1,22 +1,21 @@
 {
-  "mappings": {
-    "courses": {
-      "properties": {
-        "id": {
-          "type": "keyword",
-          "index": true
-        },
-        "name": {
-          "type": "text",
-          "index": true,
-          "fielddata": true
-        },
-        "duration": {
-          "type": "text",
-          "index": true,
-          "fielddata": true
-        }
+  "mappings":{
+    "properties": {
+      "id": {
+        "type": "keyword",
+        "index": true
+      },
+      "name": {
+        "type": "text",
+        "index": true,
+        "fielddata": true
+      },
+      "duration": {
+        "type": "text",
+        "index": true,
+        "fielddata": true
       }
     }
   }
+
 }
