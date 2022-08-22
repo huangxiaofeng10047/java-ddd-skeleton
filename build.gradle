@@ -13,7 +13,8 @@ allprojects {
   }
 
   ext {
-    set('springCloudVersion', "Hoxton.M3")
+//    set('springCloudVersion', "Hoxton.M3")
+    set('springCloudVersion', "2021.0.3")
   }
 
   ext {
