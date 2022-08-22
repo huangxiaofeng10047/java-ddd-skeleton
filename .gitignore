@@ -12,4 +12,5 @@ gradle-app.setting
 .env.*.local
 .idea/*
 es/*
-/es/
+/es/*
+/es/data/*
