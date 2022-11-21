@@ -37,9 +37,10 @@ services:
     volumes:
       - ./es/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
       - ./es/data:/usr/share/elasticsearch/data
-      - ./es/plugins:/usr/share/elasticsearch/plugins  
+      - ./es/plugins:/usr/share/elasticsearch/plugins
     environment:
       - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
 
   java:
     container_name: codelytv-ddd_skeleton-java
